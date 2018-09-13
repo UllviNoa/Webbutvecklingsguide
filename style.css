@@ -1,10 +1,9 @@
-
 #left {
     width: 20%;
     display: inline-block;
     float: left;
     background-color: azure;
-    min-height: 1000px;
+    min-height: 750px;
 }
 
 #right {
@@ -15,7 +14,7 @@
 
 #iframe {
     width: 100%;
-    min-height: 1000px;
+    min-height: 750px;
 }
 
 .link {
@@ -31,8 +30,13 @@
     position: relative;
     background-color: #f1f1f1;
     min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    
     z-index: 1;
+}
+
+.subcat {
+    margin-left: 20px;
+    display: block;
 }
 
 /*

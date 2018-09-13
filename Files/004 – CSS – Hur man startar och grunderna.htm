@@ -5,12 +5,46 @@ xmlns:m="http://schemas.microsoft.com/office/2004/12/omml"
 xmlns:mv="http://macVmlSchemaUri" xmlns="http://www.w3.org/TR/REC-html40">
 
 <head>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script>
+            $(document).ready(function() {
+                //alert("");
+                
+                var getUrlParameter = function getUrlParameter(sParam) {
+                    var sPageURL = decodeURIComponent(window.location.search.substring(1)),
+                        sURLVariables = sPageURL.split('&'),
+                        sParameterName,
+                        i;
+
+                    for (i = 0; i < sURLVariables.length; i++) {
+                        sParameterName = sURLVariables[i].split('=');
+
+                        if (sParameterName[0] === sParam) {
+                            return sParameterName[1] === undefined ? true : sParameterName[1];
+                        }
+                    }
+                };
+                
+                var goto = getUrlParameter('goto');
+                location.hash = goto;
+                
+            });
+        
+            
+        
+        
+        </script>
+    
+    
+    
 <meta name=Rubrik content="">
 <meta name=Nyckelord content="">
-<meta http-equiv=Content-Type content="text/html; charset=macintosh">
+<meta http-equiv=Content-Type content="text/html; charset=ISO-8859-1">
 <meta name=ProgId content=Word.Document>
 <meta name=Generator content="Microsoft Word 14">
 <meta name=Originator content="Microsoft Word 14">
+    <meta charset="ISO-8859-1">
 <link rel=File-List
 href="004%20%E2%80%93%20CSS%20%E2%80%93%20Hur%20man%20startar%20och%20grunderna-filer/filelist.xml">
 <link rel=Edit-Time-Data

@@ -1,22 +1,20 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <meta charset="utf-8">
+        <meta charset="UTF-8">
         <title>Guider till Webbutveckling 1</title>
         <link type="text/css" rel="stylesheet" href="style.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <script>
             $(document).ready(function() {
-                $(".dropmain").click(function() {
-                    $(".dropsub").hide();
+                $(".dropmain").mouseenter(function() {
                     $(this).find(".dropsub").show();
-                    
+                });
+                
+                $(".dropmain").mouseleave(function() {
+                    $(".dropsub").hide(); 
                 });
             });
-        
-            
-        
-        
         </script>
         
         
@@ -30,12 +28,12 @@
                 <a target="iframe_a" class="link" href="Files/003%20%E2%80%93%20Grundl%C3%A4ggande%20taggar%20och%20kodning.htm">003 - De vanligaste taggarna och hur man kodar dem</a>
                 
                 <div class="dropsub">
-                    <a target="iframe_a" class="link" href="Files/003%20%E2%80%93%20Grundl%C3%A4ggande%20taggar%20och%20kodning.htm/#headings">Rubriker - Headings</a>
-                    <a target="iframe_a" class="link" href="Files/003%20%E2%80%93%20Grundl%C3%A4ggande%20taggar%20och%20kodning.htm/#paragraphs">Paragrafer - Paragraphs</a>
-                    <a target="iframe_a" class="link" href="Files/003%20%E2%80%93%20Grundl%C3%A4ggande%20taggar%20och%20kodning.htm/#links">Länkar - Links</a>
-                    <a target="iframe_a" class="link" href="Files/003%20%E2%80%93%20Grundl%C3%A4ggande%20taggar%20och%20kodning.htm/#lists">Listor - Lists</a>
-                    <a target="iframe_a" class="link" href="Files/003%20%E2%80%93%20Grundl%C3%A4ggande%20taggar%20och%20kodning.htm/#imgs">Bilder - Images</a>
-                    <a target="iframe_a" class="link" href="Files/003%20%E2%80%93%20Grundl%C3%A4ggande%20taggar%20och%20kodning.htm/#tables">Tabeller - Tables</a>   
+                    <a target="iframe_a" class="link" href="Files/003%20%E2%80%93%20Grundl%C3%A4ggande%20taggar%20och%20kodning.htm?goto=headings">Rubriker - Headings</a>
+                    <a target="iframe_a" class="link" href="Files/003%20%E2%80%93%20Grundl%C3%A4ggande%20taggar%20och%20kodning.htm?goto=paragraphs">Paragrafer - Paragraphs</a>
+                    <a target="iframe_a" class="link" href="Files/003%20%E2%80%93%20Grundl%C3%A4ggande%20taggar%20och%20kodning.htm?goto=links">Länkar - Links</a>
+                    <a target="iframe_a" class="link" href="Files/003%20%E2%80%93%20Grundl%C3%A4ggande%20taggar%20och%20kodning.htm?goto=lists">Listor - Lists</a>
+                    <a target="iframe_a" class="link" href="Files/003%20%E2%80%93%20Grundl%C3%A4ggande%20taggar%20och%20kodning.htm?goto=imgs">Bilder - Images</a>
+                    <a target="iframe_a" class="link" href="Files/003%20%E2%80%93%20Grundl%C3%A4ggande%20taggar%20och%20kodning.htm?goto=tables">Tabeller - Tables</a>   
                 </div>
             </div>
             
@@ -43,17 +41,38 @@
             <a target="iframe_a" class="link" href="Files/004%20%E2%80%93%20CSS%20%E2%80%93%20Hur%20man%20startar%20och%20grunderna.htm">004 - Enklare CSS och hur man börjar</a>
                 
                 <div class="dropsub">
-                    <a target="iframe_a" class="link" href="Files/004%20%E2%80%93%20CSS%20%E2%80%93%20Hur%20man%20startar%20och%20grunderna.htm/#csskomigang">Kom igång med CSS - Filer och kod</a>
-                    <a target="iframe_a" class="link" href="Files/004%20%E2%80%93%20CSS%20%E2%80%93%20Hur%20man%20startar%20och%20grunderna.htm/#cssolikasatt">Olika sätt att referera till html-taggar</a>
-                    <a target="iframe_a" class="link" href="Files/004%20%E2%80%93%20CSS%20%E2%80%93%20Hur%20man%20startar%20och%20grunderna.htm/#cssalla">CSS och referens till allt och alla taggar</a>
-                    <a target="iframe_a" class="link" href="Files/004%20%E2%80%93%20CSS%20%E2%80%93%20Hur%20man%20startar%20och%20grunderna.htm/#csssammatyp">CSS och referens till samma typ av taggar</a>
-                    <a target="iframe_a" class="link" href="Files/004%20%E2%80%93%20CSS%20%E2%80%93%20Hur%20man%20startar%20och%20grunderna.htm/#cssklass">CSS och referens till klasser</a>
-                    <a target="iframe_a" class="link" href="Files/004%20%E2%80%93%20CSS%20%E2%80%93%20Hur%20man%20startar%20och%20grunderna.htm/#cssid">CSS och referens till ID</a>
+                    <a target="iframe_a" class="link" href="Files/004%20%E2%80%93%20CSS%20%E2%80%93%20Hur%20man%20startar%20och%20grunderna.htm?goto=csskomigang">Kom igång med CSS - Filer och kod</a>
+                    <a target="iframe_a" class="link" href="Files/004%20%E2%80%93%20CSS%20%E2%80%93%20Hur%20man%20startar%20och%20grunderna.htm?goto=cssolikasatt">Olika sätt att referera till html-taggar</a>
+                    <a target="iframe_a" class="link" href="Files/004%20%E2%80%93%20CSS%20%E2%80%93%20Hur%20man%20startar%20och%20grunderna.htm?goto=cssalla">CSS och referens till allt och alla taggar</a>
+                    <a target="iframe_a" class="link" href="Files/004%20%E2%80%93%20CSS%20%E2%80%93%20Hur%20man%20startar%20och%20grunderna.htm?goto?=csssammatyp">CSS och referens till samma typ av taggar</a>
+                    <a target="iframe_a" class="link" href="Files/004%20%E2%80%93%20CSS%20%E2%80%93%20Hur%20man%20startar%20och%20grunderna.htm?goto=cssklass">CSS och referens till klasser</a>
+                    <a target="iframe_a" class="link" href="Files/004%20%E2%80%93%20CSS%20%E2%80%93%20Hur%20man%20startar%20och%20grunderna.htm?goto=cssid">CSS och referens till ID</a>
                 </div>
             </div>
-            <a target="_blank" class="link" href="https://www.w3schools.com/css/default.asp">CSS-referens till allt</a>
+            
+            
+                <a target="_blank" class="link" href="https://www.w3schools.com/css/default.asp">CSS-referens till allt</a>
+                
+            
             <a target="iframe_a" class="link" href="placementcss.html">005 - Att placera innehåll med CSS</a>
-            <a target="iframe_a" class="link">006 - Grundstrukturen för en sida med HTML och CSS</a>
+            
+            <div class="dropmain">
+            <a target="iframe_a" class="link" href="Files/006_1%20-%20En%20centrerad%20design.htm">006 - Exempel med centrerad design</a>
+            
+                <div class="dropsub">
+                    <a target="iframe_a" class="link" href="Files/006_1%20-%20En%20centrerad%20design.htm?goto=menylu">Meny längst upp</a>
+                    <a target="iframe_a" class="link" href="Files/006_1%20-%20En%20centrerad%20design.htm?goto=bgcimg">Bakgrundsbild och färg</a>
+                    <a target="iframe_a" class="link" href="Files/006_1%20-%20En%20centrerad%20design.htm?goto=headandtext">Styla rubrik och text</a>
+                    <a target="iframe_a" class="link" href="Files/006_1%20-%20En%20centrerad%20design.htm?goto=imgtext">Placera bild och text bredvid varandra</a>
+                        <div class="subcat">
+                            <a target="iframe_a" class="link" href="Files/006_1%20-%20En%20centrerad%20design.htm?goto=extexttext">Text - Text</a>
+                            <a target="iframe_a" class="link" href="Files/006_1%20-%20En%20centrerad%20design.htm?goto=extextbild">Text - Bild</a>
+                            <a target="iframe_a" class="link" href="Files/006_1%20-%20En%20centrerad%20design.htm?goto=exbtbt">Bild med text - Bild med text</a>
+                        </div>
+                    
+                </div>
+            </div>
+            
         </div>
         
         
